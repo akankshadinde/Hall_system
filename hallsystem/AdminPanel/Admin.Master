@@ -1,0 +1,96 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="hallsystem.AdminPanel.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <script src="../Scripts/jquery-3.0.0.js"></script>
+    <script src="../Scripts/umd/popper.min.js"></script>
+    <script src="../Scripts/bootstrap.min.js"></script>
+   
+
+    <link href="../Css/Masterpage.css" rel="stylesheet" />
+    <link href="../fontawesome/all.css" rel="stylesheet" />
+    <link href="../fontawesome/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-zrnmn8R8KkWl12rAZFt4yKjxplaDaT7/EUkKm7AovijfrQItFWR7O/JJn4DAa/gx" crossorigin="anonymous" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+            <div class="container-fluid">
+
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+
+                    <a class="navbar-brand pl-lg-5" href="#">AMRUT MULTIPURPOSE HALL</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+
+                        <ul class="navbar-nav ml-auto mr-5 font-weight-bolder">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../AdminPanel/DefaultPage.aspx">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../AdminPanel/AddDecorationDesign.aspx">Add Decoration</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../AdminPanel/AddCateringPackages.aspx">Add Catering</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../AdminPanel/ShowBooking.aspx">ShowBooking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../AdminPanel/CustomerRegistration.aspx">Show Registers Accounts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../AdminPanel/BookingReport.aspx">Report</a>
+                            </li>
+                            <li class="nav-item">
+                                <asp:LinkButton ID="LinkButton1" CssClass="nav-link" runat="server" OnClick="LinkButton1_Click">LOGOUT</asp:LinkButton>
+                                <%--<asp:HyperLink ID="hpLogout" CssClass="nav-link" runat="server"  OnClick="LinkButton_Click"  NavigateUrl="~/Website/HomePage.aspx">LOGOUT</asp:HyperLink>--%>
+                            </li>
+                            <li class="nav-item">
+                                <asp:Label ID="lblUserMail" CssClass="nav-link" runat="server" Text=""></asp:Label>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            
+        </div>
+         <!---Footer COntents Start here---->
+    <hr />
+    <footer>
+            <div class ="container " style="background-color:#eceff1 ;width:100%;text-align:center;padding-top:20px;padding-bottom:10px">
+               
+               
+               <%-- <p class ="pull-right "><a href="AdminHome.aspx"> Admin Login  </a></p> --%> 
+                <p style="font-size:20px;color:white;"><a  href ="HomePage.aspx" style="text-decoration:none;color:#616161">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Home &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp</a><a href ="About.aspx"style="text-decoration:none;color:#616161">About &nbsp&nbsp &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp</a><a href ="#"style="text-decoration:none;color:#616161">Contact  &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp </a><a href ="#"style="text-decoration:none;color:#616161">Gallery &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</a> </p>
+         <hr style="border-block-color:#cfd8dc"/>
+                <p style="font-size:15px;color:#616161" >Design and Created by TAG</p>
+                <p style="color:gray">&copy;2022 All Rights Are Reserved</p> 
+                </div>
+
+        </footer>
+    <!---Footer COntents End---->
+
+
+
+    </form>
+</body>
+</html>

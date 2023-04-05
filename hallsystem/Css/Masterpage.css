@@ -1,0 +1,63 @@
+﻿.footer{
+    width:1330px;
+}
+
+.imgsetting{
+
+   width:auto;
+   height:auto;
+   
+   
+}
+
+.fixed-topp
+{
+ position:fixed;
+ top:193px;
+ right:0;
+ left:0;
+ z-index:1030
+
+}
+
+.btnsetting
+{
+     margin-bottom:40px;
+     /*padding-bottom:3em;*/
+}
+.formsetting{
+
+    padding-top:2em;
+    margin-left:430px;
+    
+}
+
+.formsettingreg{
+     padding-top:2em;
+    margin-left:330px;
+}
+
+.color{
+   
+}
+
+.btncsetting
+{
+     padding-left:10em;
+     padding-bottom:19em;
+}
+.txtboxt
+{
+     padding-left:100%;
+   
+}
+.contactmargin
+{
+ padding-left:12px;
+ 
+}
+
+.bagroundimg
+{
+
+}
